@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Working Experience - orb li</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="i.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="we.html" class="active">Working Experience</a></li><li class="chapter-item expanded affix "><a href="ae.html">Academic Experience</a></li><li class="chapter-item expanded affix "><a href="pp.html">Personal Projects</a></li><li class="chapter-item expanded affix "><li class="part-title">Blog post</li><li class="chapter-item expanded "><a href="blog/01.html"><strong aria-hidden="true">1.</strong> First blog post</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">orb li</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/orbli/orbli" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="working-experience"><a class="header" href="#working-experience">Working Experience</a></h1>
+<h2 id="software-engineer-quantamental-tech-limited"><a class="header" href="#software-engineer-quantamental-tech-limited">Software Engineer, Quantamental Tech Limited</a></h2>
+<ul>
+<li>Tenor: 2020 Jul - 2022 Feb</li>
+<li>Revamp gateway system with rust</li>
+<li>Added many crypto exchanges connectivity, plus support to derivatives</li>
+<li>Added realtime (mbp/mbo) orderbook data supportivity</li>
+<li>Provide 24/7 support on opearating the gateway system</li>
+<li>Deploy system in kubernetes</li>
+<li>Provide support scripts in python</li>
+</ul>
+<p>Keywords: #crypto #marketmaking #gateway #future #option #orderbook #rust #docker #kubernetes #python</p>
+<h2 id="co-founder-director-prisec"><a class="header" href="#co-founder-director-prisec">Co-Founder, Director, PriSec</a></h2>
+<ul>
+<li>Tenor: 2017 Mar - 2020 Mar</li>
+<li>Provides a solution to companies such that upon fulfilling our standard, the
+companies can share cryptographic data for authentication while they can keep
+their own database storing confidential information unshared</li>
+<li>Handle mostly backend side development</li>
+<li>Develop backend products using golang, packaged as docker images and deploy
+to gitlab CI for CI/CD and testing</li>
+<li>Develop API for communication among the products, using gRPC and protobuf,
+also supporting RESTful</li>
+<li>Integration test through python PyTest framework</li>
+<li>Cryptographic secure by aligning ISO/RFC standards on x509 for handling cryptographic materials</li>
+<li>Assist frontend development including Dart&amp;Flutter, NodeJS&amp;VueJS</li>
+<li>Pub/sub system usage with Redis (Similar to message queueing like rabbitMQ)</li>
+<li>Use of cloud platform AWS</li>
+<li>Establishment of agile methodology for collaboration among developers</li>
+<li>Managed interns and employees for 6 months</li>
+</ul>
+<p>Keywords: #cybersecurity #cryptography #CICD #golang #x509 #aws #dart #flutter #vuejs #python #gitlabci #publickeyinfrastructure #redis #grpc #protobuf</p>
+<h2 id="software-engineer-thomson-reuters"><a class="header" href="#software-engineer-thomson-reuters">Software Engineer, Thomson Reuters</a></h2>
+<ul>
+<li>Tenor: 2015 Jan - 2016 Dec</li>
+<li>Maintainence of a component in low latency product Elektron</li>
+<li>Maintain the product written in C++. Making use of multithreading</li>
+<li>Test through python robotframework</li>
+<li>Develop an automatic test result verifier on C# as a console app</li>
+<li>CI/CD flow managed by Jenkins</li>
+<li>Observe the network traffic with Wireshark and in-house product for debugging</li>
+<li>Establish automated test in Windows Server mimicing Eikon connected to Elektron</li>
+<li>Knowledge in RSSL and therefore market data handling</li>
+</ul>
+<p>Keywords: #windowserver #redhatlinux #solaris #csharp #cpp #python #batch #bash #jenkinsci #regressiontest #multithread #lowlatency #networktrafficanalysis #pcap #scrum #marketdata #orderbook #jira</p>
+<h2 id="developer-goolook"><a class="header" href="#developer-goolook">Developer, GooLook</a></h2>
+<ul>
+<li>Tenor: 2014 Jun - 2015 Jan</li>
+<li>Work on social platform web project with LAMP stack</li>
+<li>Experience in using laravel 4</li>
+</ul>
+<p>Keywords: #php #mysql #laravel4 #apache2 #nginx #jquery #bootstrap #digitalocean</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="i.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="ae.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="i.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="ae.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
