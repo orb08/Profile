@@ -13,6 +13,6 @@ Keywords: #zeroknowledgeproof #binomialoptionpricing #classification #associatio
 
 - Tenor: 2011 Sep - 2014 Aug
 - Received programming training in SciLab, C++, Java
-- Received basic training in several foundamental area in Mathematics
+- Received basic training in several foundational area in Mathematics
 
 Keywords: #ode #numericalanalysis #numbertheory #oop
