@@ -1,6 +1,6 @@
 # Languages that I know
 
-C++, C#, Python, golang, rust; javascript, typescript
+C++, C#, Java, Python, Golang, Rust; JavaScript, TypeScript
 
 # Brief description of my capability
 
